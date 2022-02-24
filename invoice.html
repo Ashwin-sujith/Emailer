@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase order</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .invoice{
+    width: 75%;
+    margin: 0px auto;
+    /* border: 1px solid #000; */
+}
+.inner-invoice{
+    padding: 2% 5%; 
+    /* background-color: aqua; */
+}
+.wid-50{
+    width: 50%;
+}
+.poorvika-logo{
+    width: 60%;
+    margin: 0px auto;
+}
+.txt-bold{
+    font-weight: 600;
+}
+.txt-cent{
+    text-align: center;
+}
+.tp-bt-marg{
+    margin: 2% 0%;
+}
+.sub-title{
+    margin-top: 5% ;
+}
+.just-cent{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+.flt-rht{
+    float: right;
+    padding-right: 1%;
+}
+.head-2-txt{
+    font-size: 25px;
+    color: #000;
+}
+.head-6-txt{
+    font-size: 20px;
+    color: #000;
+}
+.para-txt{
+    font-size: 16px;
+    color: #000;
+}
+.title-txt{
+    background-color: #f8efef;
+}
+.product-description,.billing-details{
+    margin-bottom: 5%;
+}
+.product-description .para-txt{
+    font-size: 14px;
+}
+.lft-marg{
+    margin-left: 2%;
+}
+table,tr,td{
+    border: 1px solid #000;
+}
+tr{
+    padding: 0px 5px!important;
+}
+.foot-sign{
+    margin-top: 15%
+}
+
+@media (max-width: 640px){
+    .inner-invoice{
+        padding: 2% 4%; 
+    }
+    .invoice{
+        width: 85%;
+    }
+    .head-2-txt{
+        font-size: 12px;
+    }
+    .head-6-txt{
+        font-size: 13px;
+    }
+    .para-txt{
+        font-size: 11px;
+    }
+    .product-description .para-txt{
+        font-size: 11px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="invoice">
+        <div class="inner-invoice">
+            <header class="tp-bt-marg">
+                <div class="row just-cent">
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <!-- <h1></h1> -->
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class=" head-txt">
+                            <h2 class="head-2-txt txt-bold">PURCHASE ORDER</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <div class="poorvika-logo">
+                            <img src="img/poorvika-logo.png" alt="poorvika logo" class="img-responsive center-block lazyload"> 
+                        </div>
+                    </div>
+                </div>
+                
+            </header>
+            <div class="receiver-details">
+                <h6 class="head-6-txt txt-bold">To :</h6>
+                <p class="para-txt lft-marg">Abcdefg R <br>9876543210 <br>Adomno Private Limited <br> GST NO: 33AA0CA5720BIZS <br>AB204, Aparna CyberZon <br>Serlingampally <br> Hyderabad, Telangana 500019 </p>
+            </div>
+            <div class="sub-title tp-bt-marg">
+                <p class="para-txt"><span class="txt-bold"><u>Subject:</u></span> Work Order for Residensial Digital Screens Campaign of <span class="txt-bold">Poorvika Mobiles</span></p>
+            </div>
+            <div class="product-description">
+                <table style="width:100%">
+                    <tr class="txt-cent txt-bold title-txt">
+                      <td><p class="para-txt  ">Sr.</p></td>
+                      <td class="wid-50"><p class="para-txt" >Product Description</p></td>
+                      <td><p class="para-txt " >Unit Price<br>(INR)</p></td>
+                      <td><p class="para-txt ">Qty</p></td>
+                      <td><p class="para-txt ">Amount<br>(INR)</p></td>
+                    </tr>
+                    <tr >
+                      <td><p class="para-txt txt-cent">1</p></td>
+                      <td class="wid-50">
+                        <p class="para-txt lft-marg">Canon EOS R Mirrorless Camera Body with Single Lens: RF24-105.... </p>
+                        <p class="para-txt lft-marg">It is a long established fact that a reader will be distracted by the readable.<br> Content of a page when looking at its layout.  </p>
+                      </td>
+                      <td><p class="para-txt txt-cent"></p></td>
+                      <td><p class="para-txt txt-cent"></p></td>
+                      <td><p class="para-txt txt-cent">77004/-</p></td>
+                    </tr>
+                    <tr class="txt-bold"    >
+                        <!-- <td><p class="para-txt txt-cent"></p></td> -->
+                        <td colspan="3" class="wid-50"><p class="para-txt flt-rht">GST 18% (<span>&#8377;</span>)</p></td>
+                        <td><p class="para-txt txt-cent"></p></td>
+                        <td><p class="para-txt txt-cent">13861/-</p></td>
+                    </tr>
+                    <tr class="txt-bold">
+                        <!-- <td><p class="para-txt txt-cent"></p></td> -->
+                        <td colspan="3" class="wid-50"><p class="para-txt flt-rht">Total (<span>&#8377;</span>)</p></td>
+                        <td><p class="para-txt txt-cent"></p></td>
+                        <td><p class="para-txt txt-cent">90865/-</p></td>
+                    </tr>
+                  </table>
+            </div>
+            <div class="billing-details">
+                <h6 class="head-6-txt txt-bold"><u>Billing To :</u></h6>
+                <p class="para-txt ">Poorvika Mobiles Private Limited<br>AGR Platina <br>No 32, Block No 2 <br> Sidco Industrial Estate <br>Ekkatuthangal,<br>Chennai-600032 <br> GST No: 33AAECP9975G1Z0 </p>
+            </div>
+            <footer class="foot-sign txt-cent">
+                <div class="signature-space">
+                    <p class="para-txt txt-bold">Thanking You</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
